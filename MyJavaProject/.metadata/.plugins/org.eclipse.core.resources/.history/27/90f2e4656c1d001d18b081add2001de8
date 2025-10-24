@@ -1,0 +1,30 @@
+package com.jsp.progms;
+
+import java.util.Scanner;
+
+public class FirstdigitandLastdigit {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the number:");
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		/*int number=134
+		//int first=1
+		//int last=4
+		//sum=5
+		//int lastdigit=134%10  //4
+		//int lastdigit=145%10;  //5
+	    firstdigit=number;
+	    while(firstdigit>=10){
+	    firstdigit=firstdigit/10;*/
+		int lastdigit=n%10;
+		int firstdigit;
+		 firstdigit=n;
+		    while(firstdigit>=10){
+		    firstdigit=firstdigit/10;
+	}
+    System.out.println("firstdigit"+firstdigit);
+    System.out.println("lastdigit"+lastdigit);
+    System.out.println("sum"+(firstdigit+lastdigit));
+	}
+}

@@ -1,0 +1,47 @@
+package com.jsp.String;
+
+public class BalancedString {
+ 
+	public static boolean isvalid(String s){
+		
+		if(s==null ||s.length()==0) {
+			return true;
+		}
+		int count=0;
+		int i=0;
+		while(i<s.length()) {
+			char c=s.charAt(i);
+			if(c=='(') {
+				count++;
+				System.out.println("count value:"+count);
+			
+			}else if(c==')'){
+				if(count==0) {
+					return false;
+				}
+				else {
+					count--;
+					//System.out.println("count value:"+count);
+				}
+			}
+			i++;
+		}
+	     if(count!=0) {
+	    	 return false;
+		}
+	    return true;
+	}
+	public static void main(String[] args) {
+		// sing s="";
+		// System.out.println("isvalid"+isvalid(s);
+		/* sing s="((ABC)GH)";
+		 System.out.println("isvalid"+isvalid(s));*/
+		String s="{(ABC)()}";
+		System.out.println("isvalid"+isvalid(s));
+		 
+	}
+	
+		
+	
+
+}

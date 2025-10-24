@@ -1,0 +1,13 @@
+package com.jsp.String;
+
+public class Secondoccurance {
+
+	public static void main(String[] args) {
+		String s1="developer";
+		int totalcount=s1.length();
+		int count=s1.indexOf('e',('e')+1);
+		System.out.println(count);
+
+	}
+
+}

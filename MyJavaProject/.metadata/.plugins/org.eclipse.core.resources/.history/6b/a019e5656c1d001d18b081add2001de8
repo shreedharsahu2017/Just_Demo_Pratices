@@ -1,0 +1,32 @@
+package com.jsp.progms;
+
+import java.util.Scanner;
+
+public class Happynum {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the number:");
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		//int temp;
+	   //n=temp;
+		int sum=0;
+		while(n>9) {
+			while(n>0) {
+				int mod=n%10;
+				sum=sum+(int)Math.pow(mod, 2);
+			     n=n/10;
+			}
+			n=sum;
+			sum=0;
+		}
+		if(n==1) {
+			System.out.println("happy number");
+		}else {
+				System.out.println("unhappy number:");
+			}
+			
+		}
+	}
+
+

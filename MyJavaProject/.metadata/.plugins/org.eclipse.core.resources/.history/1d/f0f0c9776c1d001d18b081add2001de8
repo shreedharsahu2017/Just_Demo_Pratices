@@ -1,0 +1,31 @@
+package com.jsp.String;
+
+public class Countoccuranceof {
+
+	public static void main(String[] args) {
+		String s1="welcome to oops java";
+		int totalcount=s1.length();
+		int totalcount_afterremove=s1.replace("o","").length();
+		int count=totalcount-totalcount_afterremove;
+		System.out.println("number of occurance of a"+count);
+	}
+}
+
+
+
+
+
+
+
+
+
+/*public static void main(String[] args) {
+	String s="java programmings java oops";
+	int totalcount=s.length();
+	int totalcount_afterremove=s.replace("a", "").length();
+	//total length after removing a
+	int count=totalcount-totalcount_afterremove;
+	System.out.println("number of occurance of a is"+count);
+}
+
+}*/

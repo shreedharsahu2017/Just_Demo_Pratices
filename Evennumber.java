@@ -1,0 +1,13 @@
+class  Evennumber
+{
+	public static void main(String[] args) 
+	{
+       int even=10;
+	   String output=(even%2==0)?"Even numner":"odd number";
+	   System.out.println(output);
+	   for(;;){
+		   System.out.println("infinite");
+
+	   }
+	}
+}
